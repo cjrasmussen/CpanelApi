@@ -41,6 +41,7 @@ class CpanelApi
 	 * @param string $function
 	 * @param array $args
 	 * @return mixed
+	 * @throws RuntimeException
 	 */
 	public function request($module, $function, array $args = [])
 	{
