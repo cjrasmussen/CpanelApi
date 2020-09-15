@@ -6,7 +6,7 @@ Simple class for making requests to the WHM/cPanel API.  Not affiliated with cPa
 ## Usage
 
 ```php
-use cjrasmussen\CpanelApi;
+use cjrasmussen\CpanelApi\CpanelApi;
 
 $cpanel = new CpanelApi($host, $username, $token, CpanelApi::API_UAPI);
 
