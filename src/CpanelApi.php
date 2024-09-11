@@ -21,7 +21,7 @@ class CpanelApi
 	 * @param string $token
 	 * @param int|null $api
 	 */
-	public function __construct($host, $username, $token, $api = null)
+	public function __construct(string $host, string $username, string $token, ?int $api = null)
 	{
 		$this->host = $host;
 		$this->user = $username;
@@ -43,7 +43,7 @@ class CpanelApi
 	 * @return mixed
 	 * @throws RuntimeException
 	 */
-	public function request($module, $function, array $args = [])
+	public function request(string $module, string $function, array $args = [])
 	{
 		if (!is_array($args)) {
 			$args = [$args];
@@ -78,12 +78,6 @@ class CpanelApi
 		$response = curl_exec($c);
 		curl_close($c);
 
-		// DECODE THE RESPONSE INTO A GENERIC OBJECT
-		$data = json_decode($response);
-		if (json_last_error() !== JSON_ERROR_NONE) {
-			throw new RuntimeException('API response was not valid JSON');
-		}
-
-		return $data;
+		return json_decode($response, false);
 	}
 }

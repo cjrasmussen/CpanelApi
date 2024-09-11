@@ -1,14 +1,14 @@
 {
   "name": "cjrasmussen/cpanel-api",
   "description": "Simple helper for interacting with cPanel's API",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "keywords": ["cPanel", "WHM"],
-  "homepage": "https://www.clarkrasmussen.com",
+  "homepage": "https://cjr.dev",
   "license": "MIT",
   "authors": [
     {
       "name": "Clark Rasmussen",
-      "homepage": "https://www.clarkrasmussen.com",
+      "homepage": "https://cjr.dev",
       "role": "Developer"
     }
   ],
@@ -17,7 +17,7 @@
     "source": "https://github.com/cjrasmussen/CpanelApi"
   },
   "require": {
-    "php": ">=7.1.0",
+    "php": ">=7.4.0",
     "ext-curl": "*",
     "ext-json": "*"
   },
