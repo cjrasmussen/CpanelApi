@@ -2,6 +2,7 @@
 
 Simple class for making requests to the WHM/cPanel API.  Not affiliated with cPanel.
 
+Note: This is no longer maintained.
 
 ## Usage
 
